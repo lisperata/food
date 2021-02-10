@@ -209,7 +209,7 @@ window.addEventListener("DOMContentLoaded", () => {
     if (e.code === "Escape" && modal.classList.contains('show')) {
       closeModal();
     }
-  }); //const modalTimerId = setTimeout(openModal, 3000);
+  });
 
   function showModalByScroll() {
     if (window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight) {
@@ -218,7 +218,7 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  window.addEventListener('scroll', showModalByScroll); //Классы для карточек
+  window.addEventListener('scroll', showModalByScroll);
 
   class MenuCard {
     constructor(src, alt, title, descr, price, parentSelector, ...classes) {

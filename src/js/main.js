@@ -36,7 +36,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   //Timer
 
-  const deadLine = "2020-07-11";
+  const deadLine = "2021-07-11";
 
   function getTimeRemaining(endtime) {
     const t = Date.parse(endtime) - Date.parse(new Date());
