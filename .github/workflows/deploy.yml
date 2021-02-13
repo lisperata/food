@@ -16,9 +16,9 @@ jobs:
     - name: Install
       run: npm i
     - name: Build 
-      run: gulp
+      run: gulp copy-html build-js build-sass copy-assets
     - name: Bundle
-      run: mkdir ./out && mkdir ./out/food && mv dist/js ./out/food && mv dist/css ./out/food && mv dist/index.html ./out/food && mv dist/icons ./out/food && mv dist/img ./out/food
+      run: mkdir ./out && mkdir ./out/food && mv dist/* ./out/food
       
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
